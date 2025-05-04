@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quizApp</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/score.css" />
   </head>
   <body>
     <header><!--header vlozen pomoci header.js--></header>
@@ -23,21 +23,17 @@
         </form>
       </div>
     </div>
-    <main>
-      <h1>Vítejte v aplikaci quizApp!</h1>
-      <!-- bude třeba upravit jakmile se naucim posilat data z DB -->
-      <div id="quizSelectContainer">
-        <label for="quizSelect">Vyberte kvíz:</label>
-        <select id="quizSelect">
-          <!-- <option value="" disabled selected>-- Vyberte --</option> = nefunguje dobre ve firefox, pridani je resono uvlast v js -->
-          <!-- Možnosti se doplní z JavaScriptu -->
-        </select>
-        <button id="startBtn" class="hidden">Začít</button>
-      </div>
-      <p id="selectedQuiz" style="font-weight: bold"></p>
-    </main>
-
+    <!-- tabulky se score-->
+    <div>
+      <table id="single-player-table" class="table">
+        <tr id="single-player table-header">
+          <th>Oblast</th>
+          <th>Počet bodů</th>
+          <th>Dohráno</th>
+        </tr>
+      </table>
+    </div>
     <script src="./js/header.js" defer></script>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/score.js" defer></script>
   </body>
 </html>

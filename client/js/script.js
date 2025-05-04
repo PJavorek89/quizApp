@@ -1,34 +1,7 @@
-//header
-const loginBtn = document.getElementById("loginBtn");
-const loginModal = document.getElementById("loginModal");
-const closeBtn = document.querySelector(".close");
-const modalContent = document.querySelector(".modal-content");
-
 //roletka pro výběr quizu
 const quizSelect = document.getElementById("quizSelect");
 const startBtn = document.getElementById("startBtn");
 const selectedQuiz = document.getElementById("selectedQuiz");
-
-loginBtn.addEventListener("click", () => {
-  loginModal.classList.remove("hidden");
-});
-
-closeBtn.addEventListener("click", () => {
-  loginModal.classList.add("hidden");
-});
-
-// Schování modalu při kliknutí mimo obsah
-loginModal.addEventListener("click", (event) => {
-  /*
-    if (event.target === loginModal) {
-    loginModal.classList.add("hidden");
-  }
-    */
-  //tato podminka je jistejsi
-  if (!modalContent.contains(event.target)) {
-    loginModal.classList.add("hidden");
-  }
-});
 
 //test data pro roletku z vyberu quizu
 const quizList = [

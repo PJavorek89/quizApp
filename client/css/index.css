@@ -1,0 +1,12 @@
+/* vyber quiz - roletka styly */
+#quizSelectContainer {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+#quizSelect,
+#startBtn {
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
